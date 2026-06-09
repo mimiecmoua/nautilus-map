@@ -181,22 +181,42 @@
     },
     {
       "Escales du Nautilus": {
-        "fr": "La mer Rouge",
-        "en": "The Red Sea"
+        "fr": "Sous l'isthme de Suez",
+        "en": "Beneath the Isthmus of Suez"
       },
       "Date": {
         "fr": "30 Janvier 1867",
         "en": "January 30th, 1867"
       },
-      "Latitude_Décimal": 25.35,
-      "Longitude_Décimal": 35.7167,
+      "Latitude_Décimal": 29.95,
+      "Longitude_Décimal": 32.55,
       "Océan/Mer": {
         "fr": "Mer Rouge",
         "en": "Red Sea"
       },
       "Event": {
-        "fr": "Arabian Tunnel - Chasse du dugong.",
-        "en": "Arabian Tunnel - Dugong hunting."
+        "fr": "Passage par l'Arabian Tunnel, le corridor souterrain imaginé par Nemo sous l'isthme de Suez, puis chasse du dugong.",
+        "en": "Passage through the Arabian Tunnel, the underground corridor imagined by Nemo beneath the Isthmus of Suez, followed by the dugong hunt."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "L'archipel grec",
+        "en": "The Greek Archipelago"
+      },
+      "Date": {
+        "fr": "12 Février 1867",
+        "en": "February 12th, 1867"
+      },
+      "Latitude_Décimal": 35.0,
+      "Longitude_Décimal": 24.0,
+      "Océan/Mer": {
+        "fr": "Mer Égée",
+        "en": "Aegean Sea"
+      },
+      "Event": {
+        "fr": "Passage du Nautilus dans l'archipel grec ; Aronnax observe les poissons de ces eaux, avec une évocation de l'ancienne île de Crète.",
+        "en": "The Nautilus passes through the Greek Archipelago; Aronnax observes the fish of these waters, with an evocation of the ancient island of Crete."
       }
     },
     {
@@ -219,24 +239,25 @@
         "en": "The Mediterranean in forty-eight hours - To his great annoyance, Ned Land had to abandon his escape plans - Observation of Mediterranean fish."
       }
     },
+    
     {
       "Escales du Nautilus": {
-        "fr": "Contour Afrique Nord",
-        "en": "North Africa Coast"
+        "fr": "L'Atlantide",
+        "en": "Atlantis"
       },
       "Date": {
-        "fr": "19 Février 1867",
-        "en": "February 19th, 1867"
+        "fr": "13 Mars 1867",
+        "en": "March 13th, 1867"
       },
-      "Latitude_Décimal": 32.302988,
-      "Longitude_Décimal": -24.380986,
+      "Latitude_Décimal": 20.0,
+      "Longitude_Décimal": -30.0,
       "Océan/Mer": {
-        "fr": "Océan Atlantique Nord",
-        "en": "North Atlantic Ocean"
+        "fr": "Océan Atlantique Sud",
+        "en": "South Atlantic Ocean"
       },
       "Event": {
-        "fr": "Direction le pôle Sud.",
-        "en": "Heading towards the South Pole."
+        "fr": "Vision de l'Atlantide lors de la traversée de la mer des Sargasses ; localisation cartographique approximative d'après le trajet du roman.",
+        "en": "Vision of Atlantis during the crossing of the Sargasso Sea; approximate cartographic location based on the novel's route."
       }
     },
     {
@@ -248,15 +269,35 @@
         "fr": "13 Mars 1867",
         "en": "March 13th, 1867"
       },
-      "Latitude_Décimal": -45.6167,
-      "Longitude_Décimal": -37.8833,
+      "Latitude_Décimal": 20.0,
+      "Longitude_Décimal": -30.0,
       "Océan/Mer": {
-        "fr": "Océan Atlantique Sud",
-        "en": "South Atlantic Ocean"
+        "fr": "Océan Atlantique Nord",
+        "en": "North Atlantic Ocean"
       },
       "Event": {
         "fr": "L'Atlantide, l'ancienne Métropide de Théopompe, l'Atlantide de Platon.",
         "en": "Atlantis, the ancient Metropis of Theopompus, the Atlantis of Plato."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Contour Afrique Nord",
+        "en": "North Africa Coast"
+      },
+      "Date": {
+        "fr": "19 Février 1867",
+        "en": "February 19th, 1867"
+      },
+      "Latitude_Décimal": -10.1775,
+      "Longitude_Décimal": -17.7380,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Nord",
+        "en": "North Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Direction le pôle Sud.",
+        "en": "Heading towards the South Pole."
       }
     },
     {
@@ -515,8 +556,8 @@
         "en": "Celtic Sea"
       },
       "Event": {
-        "fr": "La vengeance du capitaine Nemo, le vengeur, et cette horrible scène du vaisseau coulé avec son équipage.",
-        "en": "The vengeance of Captain Nemo, the avenger, and that horrible scene of the sunken ship with its crew."
+        "fr": "Le Nautilus affronte un navire ennemi non identifié dans une zone située au large des côtes irlandaises.",
+        "en": "The Nautilus confronts an unidentified enemy vessel in waters off the Irish coast."
       }
     },
     {
@@ -568,8 +609,8 @@
         "fr": "3 Juin 1867",
         "en": "June 3rd, 1867"
       },
-      "Latitude_Décimal": 55.59412,
-      "Longitude_Décimal": 4.136887,
+      "Latitude_Décimal": 67.8,
+      "Longitude_Décimal": 12.8333,
       "Océan/Mer": {
         "fr": "Mer du Nord",
         "en": "North Sea"
