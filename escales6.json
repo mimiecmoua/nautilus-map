@@ -242,42 +242,42 @@
     
     {
       "Escales du Nautilus": {
-        "fr": "L'Atlantide",
-        "en": "Atlantis"
-      },
-      "Date": {
-        "fr": "13 Mars 1867",
-        "en": "March 13th, 1867"
-      },
-      "Latitude_Décimal": 20.0,
-      "Longitude_Décimal": -30.0,
-      "Océan/Mer": {
-        "fr": "Océan Atlantique Sud",
-        "en": "South Atlantic Ocean"
-      },
-      "Event": {
-        "fr": "Vision de l'Atlantide lors de la traversée de la mer des Sargasses ; localisation cartographique approximative d'après le trajet du roman.",
-        "en": "Vision of Atlantis during the crossing of the Sargasso Sea; approximate cartographic location based on the novel's route."
-      }
-    },
-    {
-      "Escales du Nautilus": {
-        "fr": "La mer de Sargasses",
-        "en": "The Sargasso Sea"
-      },
-      "Date": {
-        "fr": "13 Mars 1867",
-        "en": "March 13th, 1867"
-      },
-      "Latitude_Décimal": 20.0,
-      "Longitude_Décimal": -30.0,
-      "Océan/Mer": {
-        "fr": "Océan Atlantique Nord",
-        "en": "North Atlantic Ocean"
-      },
-      "Event": {
-        "fr": "L'Atlantide, l'ancienne Métropide de Théopompe, l'Atlantide de Platon.",
-        "en": "Atlantis, the ancient Metropis of Theopompus, the Atlantis of Plato."
+    "fr": "L'Atlantide",
+    "en": "Atlantis"
+  },
+  "Date": {
+    "fr": "19 Février 1867",
+    "en": "February 19th, 1867"
+  },
+  "Latitude_Décimal": 20.0,
+  "Longitude_Décimal": -30.0,
+  "Océan/Mer": {
+    "fr": "Océan Atlantique",
+    "en": "Atlantic Ocean"
+  },
+  "Event": {
+    "fr": "Vision de l'Atlantide, localisation cartographique approximative d'après le trajet du roman.",
+    "en": "Vision of Atlantis; approximate cartographic location based on the novel's route."
+  }
+},
+{
+  "Escales du Nautilus": {
+    "fr": "La mer des Sargasses",
+    "en": "The Sargasso Sea"
+  },
+  "Date": {
+    "fr": "22 Février 1867",
+    "en": "February 22nd, 1867"
+  },
+  "Latitude_Décimal": 21.5,
+  "Longitude_Décimal": -31.5,
+  "Océan/Mer": {
+    "fr": "Océan Atlantique Nord",
+    "en": "North Atlantic Ocean"
+  },
+  "Event": {
+    "fr": "Traversée de la mer des Sargasses par le Nautilus.",
+    "en": "Crossing of the Sargasso Sea by the Nautilus."
       }
     },
     {
@@ -286,8 +286,8 @@
         "en": "North Africa Coast"
       },
       "Date": {
-        "fr": "19 Février 1867",
-        "en": "February 19th, 1867"
+        "fr": "23 Février 1867",
+        "en": "February 23th, 1867"
       },
       "Latitude_Décimal": -10.1775,
       "Longitude_Décimal": -17.7380,
@@ -306,8 +306,8 @@
         "en": "South America Outline"
       },
       "Date": {
-        "fr": "14 Mars 1867",
-        "en": "March 14th, 1867"
+        "fr": "13 Mars 1867",
+        "en": "March 13th, 1867"
       },
       "Latitude_Décimal": -54.8,
       "Longitude_Décimal": -50.4,
@@ -609,8 +609,8 @@
         "fr": "3 Juin 1867",
         "en": "June 3rd, 1867"
       },
-      "Latitude_Décimal": 67.8,
-      "Longitude_Décimal": 12.8333,
+      "Latitude_Décimal": 61.541262,
+      "Longitude_Décimal": 0.513488,
       "Océan/Mer": {
         "fr": "Mer du Nord",
         "en": "North Sea"
