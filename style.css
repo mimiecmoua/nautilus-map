@@ -5,46 +5,223 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   background: #000;
   font-family: "Raleway", sans-serif;
-  overflow-x: hidden;
-  overflow-y: auto;
+  position: relative;
 }
 
+/* === TITRE PRINCIPAL === */
 h1 {
-    text-align: center;
-    color: #27c39f; /* Turquoise lumineux façon Nautilus */
-    font-size: clamp(2rem, 5vw, 4rem); /* Responsive entre 2rem et 4rem */
-    margin: 40px 10px 10px;
-    font-family: 'Michroma', sans-serif; /* Style "journal de bord" */
-    text-shadow: 0 0 8px #195480; /* Effet lumière douce */
-    z-index: 100;
-    position: relative;
-  }
-  
+  text-align: center;
+  color: #27c39f;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 40px 10px 10px;
+  font-family: 'Michroma', sans-serif;
+  text-shadow: 0 0 8px #195480;
+  z-index: 100;
+  position: relative;
+}
 
 /* === CONTENEUR PRINCIPAL === */
 .hud-layout {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
-  padding: 30px 20px;
+  padding: 30px 20px 165px;
+  position: relative;
+  z-index: 2;
+  height: calc(100vh - 170px);
 }
 
-/* === IMAGE DU HUD === */
-.hud-img {
-    width: 600px;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    position: relative;
-    z-index: 2; /* <-- important */
+/* === NOUVELLE CARD INSTRUCTIONS === */
+.hud-layout--card {
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.instruction-card {
+  width: min(980px, 100%);
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: clamp(1.25rem, 2vw, 2rem);
+  border-radius: 28px;
+  border: 1px solid rgba(168, 255, 255, 0.22);
+  background: linear-gradient(180deg, rgba(5, 20, 31, 0.72), rgba(3, 12, 20, 0.48));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.35),
+    inset 0 0 30px rgba(39, 195, 159, 0.05);
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #27c39f rgba(255, 255, 255, 0.08);
+}
+
+.instruction-card::-webkit-scrollbar {
+  width: 10px;
+}
+
+.instruction-card::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+}
+
+.instruction-card::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #27c39f, #195480);
+  border-radius: 999px;
+}
+
+.instruction-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.03) 32%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.card-header,
+.instruction-block {
+  position: relative;
+  z-index: 1;
+}
+
+.card-header {
+  margin-bottom: 1.75rem;
+}
+
+.card-kicker {
+  margin-bottom: 0.6rem;
+  color: #a8ffff;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.instruction-card h2 {
+  margin: 0 0 0.9rem;
+  color: #e6fbff;
+  font-family: 'Michroma', sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  line-height: 1.3;
+}
+
+.card-intro,
+.instruction-card p,
+.instruction-card li {
+  color: #d5edf5;
+  line-height: 1.7;
+  font-size: clamp(0.98rem, 1vw, 1.05rem);
+}
+
+.instruction-block {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 22px;
+  border: 1px solid rgba(168, 255, 255, 0.14);
+  background: rgba(10, 24, 34, 0.42);
+}
+
+.instruction-block h3 {
+  margin-bottom: 0.9rem;
+  color: #27c39f;
+  font-family: 'Michroma', sans-serif;
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+}
+
+.instruction-points {
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+  padding: 0;
+}
+
+.instruction-points li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.instruction-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #27c39f;
+  box-shadow: 0 0 10px #27c39f;
+}
+
+.logbook-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.logbook-step {
+  padding: 1rem 1rem 1rem 1.2rem;
+  border-left: 1px solid rgba(168, 255, 255, 0.35);
+  background: rgba(6, 18, 27, 0.35);
+  border-radius: 16px;
+}
+
+.step-label {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  color: #a8ffff;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .hud-layout {
+    height: calc(100vh - 110px);
+    padding: 20px 14px 100px;
   }
+
+  .instruction-card {
+    max-height: calc(100vh - 190px);
+    border-radius: 22px;
+    padding: 1rem;
+  }
+
+  .instruction-block {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+}
+
+/* === ANCIEN STYLE IMAGE HUD, conservé si besoin === */
+.hud-img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
 
 /* === BOUTON EXPLORED === */
 button {
@@ -114,11 +291,11 @@ button {
 
 #leftTop {
   top: -1.96em;
-  left: -3.0em;
+  left: -3em;
 }
 
 #leftBottom {
-  top: 2.10em;
+  top: 2.1em;
   left: -2.15em;
 }
 
@@ -147,12 +324,15 @@ button:hover .corner {
 button:hover #leftTop {
   animation: 0.1s ease-in-out 0.05s both changeColor8, 0.2s linear 0.4s both lightEffect8;
 }
+
 button:hover #rightTop {
   animation: 0.1s ease-in-out 0.15s both changeColor8, 0.2s linear 0.4s both lightEffect8;
 }
+
 button:hover #rightBottom {
   animation: 0.1s ease-in-out 0.25s both changeColor8, 0.2s linear 0.4s both lightEffect8;
 }
+
 button:hover #leftBottom {
   animation: 0.1s ease-in-out 0.35s both changeColor8, 0.2s linear 0.4s both lightEffect8;
 }
@@ -205,48 +385,23 @@ button:hover #clip {
   }
 }
 
-/* === RESPONSIVE === */
-@media screen and (max-width: px) {
-  .hud-layout {
-    flex-direction: column;
-  }
-
-  button {
-    margin-top: 10px;
-  }
-}
-
 #map {
   height: 600px;
   width: 100%;
 }
 
+/* === FOOTER CONSERVÉ ET CORRIGÉ === */
 .site-footer {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 🔍 transparence sur fond noir */
-    padding: 10px 10px;
-    text-align: center;
-    font-family: 'Michroma', sans-serif;
-    font-size: 0.8rem;
-    color: #27c39f;
-    border-top: 1px solid #195480;
-    position: fixed;     /* 🔽 collé en bas de l’écran */
-    bottom: 0;
-    left: 0;
-    z-index: 10;          /* 🔝 visible au-dessus du fond animé */
-    backdrop-filter: blur(4px); /* 💫 effet de flou chic (facultatif) */
-  }
-  
-  .site-footer a {
-    color: #27c39f;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-  }
-
-  .site-footer {
-  position: static; /* comportement par défaut */
-  ...
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
+  text-align: center;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.8rem;
+  color: #27c39f;
+  border-top: 1px solid #195480;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .fixed-footer {
@@ -257,28 +412,54 @@ button:hover #clip {
   z-index: 10;
 }
 
-  
-  .site-footer a:hover {
-    color: #2efadf;
-  }
-  a:hover {
+.site-footer a {
+  color: #27c39f;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: #2efadf;
+}
+
+a:hover {
   color: #00ffff;
   text-shadow: 0 0 5px #00ffff;
   transition: all 0.3s ease-in-out;
 }
 
-  
-  @media (max-width: 375px) {
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .hud-layout {
+    flex-direction: column;
+    padding: 20px 14px 120px;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  .instruction-card {
+    border-radius: 22px;
+    padding: 1rem;
+  }
+
+  .instruction-block {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 375px) {
   .site-footer {
-    padding: 5px 5px;     /* moins de padding pour réduire la hauteur */
-    font-size: 0.7rem;     /* texte un peu plus petit */
+    padding: 5px 5px;
+    font-size: 0.7rem;
   }
 
   .site-footer p {
-    gap: 4px;              /* espace réduit entre lignes */
+    gap: 4px;
   }
-  
-  
 }
   
   

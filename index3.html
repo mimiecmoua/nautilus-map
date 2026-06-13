@@ -20,10 +20,57 @@
 </head>
 <body>
     <h1>Instructions</h1>
-    <div class="hud-layout">
-        <img src="img/instructions-En8-removebg-preview.webp" class="hud-img" alt="Captain Nemo ruder">
-        <img src="img/Instructions-Fr9-removebg-preview.webp" class="hud-img" alt="Captain Nemo exploration">
+
+<section class="hud-layout hud-layout--card" aria-labelledby="instructions-title">
+  <div class="instruction-card">
+    <div class="card-header">
+      <p class="card-intro">
+        Cette interface se lit comme un poste de navigation. Il suffit d'observer,
+        de cliquer sur les zones actives et de lire les informations affichées à l'écran.
+      </p>
     </div>
+
+    <div class="instruction-block">
+      <h3>Utilisation</h3>
+      <ul class="instruction-points">
+        <li>Observer la carte et repérer les zones interactives.</li>
+        <li>Cliquer pour déclencher une action ou afficher une information.</li>
+        <li>Lire les retours affichés pour suivre l'exploration.</li>
+      </ul>
+    </div>
+
+    <div class="instruction-block">
+  <h3>Journal de bord vivant (fonctionnalité en cours de développement)</h3>
+  <p class="card-intro">
+    Cette partie permettra de consulter une fiche enrichie liée à chaque escale.
+    Le journal de bord vivant sera organisé en trois lectures complémentaires pour mieux comprendre le passage exploré.
+  </p>
+
+  <div class="logbook-list">
+    <article class="logbook-step">
+      <span class="step-label">Bloc 1</span>
+      <p>
+        Lecture narrative : l'IA reformule l'événement, le contexte de l'escale et les éléments importants du passage étudié.
+      </p>
+    </article>
+
+    <article class="logbook-step">
+      <span class="step-label">Bloc 2</span>
+      <p>
+        Lecture du vivant : l'IA identifie les espèces ou formes de vie mentionnées dans le passage ; si aucune n'est citée, elle le précise clairement.
+      </p>
+    </article>
+
+    <article class="logbook-step">
+      <span class="step-label">Bloc 3</span>
+      <p>
+        Lecture scientifique : l'IA replace le contenu dans les connaissances du XIXe siècle et propose une mise en perspective entre 1866 et aujourd'hui.
+      </p>
+    </article>
+  </div>
+</div>
+  </div>
+</section>
     <footer class="site-footer fixed-footer">
   <p class="copyright">
     &copy; WebOara 2025 • 🩵
@@ -32,8 +79,8 @@
     <a href="img/cguNautilus.pdf" target="_blank">CGU</a>
     <a href="https://weboara.com/" target="_blank">Contact</a>
     <a href="https://www.societejulesverne.org/" target="_blank">Société Jules Verne</a>
-    <a href="index2.html">Map</a>
-    <a href="index.html">Home</a>
+    <a href="index2.html">Carte</a>
+    <a href="index.html">Accueil</a>
   </nav>
 </footer>
     <script src="script.js"defer></script>
