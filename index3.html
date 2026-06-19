@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="img/kraken.png">
 </head>
 <body>
-    <h1>Instructions</h1>
+    <h1>Mode d'emploi</h1>
 
 <section class="hud-layout hud-layout--card" aria-labelledby="instructions-title">
   <div class="instruction-card">
@@ -40,35 +40,59 @@
     </div>
 
     <div class="instruction-block">
-  <h3>Journal de bord vivant (fonctionnalité en cours de développement)</h3>
-  <p class="card-intro">
-    Cette partie permettra de consulter une fiche enrichie liée à chaque escale.
-    Le journal de bord vivant sera organisé en trois lectures complémentaires pour mieux comprendre le passage exploré.
-  </p>
+      <h3>Sur la carte</h3>
+      <ul class="instruction-points">
+        <li>Chaque marqueur bleu correspond à une escale du Nautilus.</li>
+        <li>Le marqueur vert ⚓ indique le point de départ du voyage, le marqueur rouge 🏁 indique l'arrivée.</li>
+        <li>La ligne bleue retrace le trajet complet du sous-marin.</li>
+        <li>Cliquer sur un marqueur ouvre une fenêtre bilingue (français / anglais) avec les informations de l'escale : date, océan, événement, coordonnées.</li>
+      </ul>
+    </div>
 
-  <div class="logbook-list">
-    <article class="logbook-step">
-      <span class="step-label">Bloc 1</span>
-      <p>
-        Lecture narrative : l'IA reformule l'événement, le contexte de l'escale et les éléments importants du passage étudié.
+    <div class="instruction-block">
+      <h3>Le journal de bord vivant</h3>
+      <p class="card-intro">
+        Depuis chaque fenêtre d'escale, deux menus donnent accès à quatre fiches : le
+        <strong>Journal de bord vivant</strong> (extrait du livre et espèces marines) et les
+        <strong>Explorations IA</strong> (découvertes scientifiques et comparaison 1866 / aujourd'hui).
       </p>
-    </article>
 
-    <article class="logbook-step">
-      <span class="step-label">Bloc 2</span>
-      <p>
-        Lecture du vivant : l'IA identifie les espèces ou formes de vie mentionnées dans le passage ; si aucune n'est citée, elle le précise clairement.
-      </p>
-    </article>
+      <div class="logbook-list">
+        <article class="logbook-step">
+          <span class="step-label">Fiche 1</span>
+          <p>
+            📖 <strong>Extrait du livre</strong> — le passage original de
+            <em>Vingt mille lieues sous les mers</em> de Jules Verne correspondant à cette escale,
+            disponible en français et en anglais.
+          </p>
+        </article>
 
-    <article class="logbook-step">
-      <span class="step-label">Bloc 3</span>
-      <p>
-        Lecture scientifique : l'IA replace le contenu dans les connaissances du XIXe siècle et propose une mise en perspective entre 1866 et aujourd'hui.
-      </p>
-    </article>
-  </div>
-</div>
+        <article class="logbook-step">
+          <span class="step-label">Fiche 2</span>
+          <p>
+            🐙 <strong>Espèces maritimes mentionnées</strong> — les espèces et organismes marins
+            identifiés dans le passage du roman associé à l'escale. Si aucune espèce n'est citée,
+            cela est précisé clairement.
+          </p>
+        </article>
+
+        <article class="logbook-step">
+          <span class="step-label">Fiche 3</span>
+          <p>
+            🔬 <strong>Découvertes scientifiques du XIXe siècle</strong> — le contexte scientifique
+            de l'escale : océanographie, cartographie, plongée et connaissances de l'époque.
+          </p>
+        </article>
+
+        <article class="logbook-step">
+          <span class="step-label">Fiche 4</span>
+          <p>
+            ⚗️ <strong>Comparaison 1866 / aujourd'hui</strong> — une mise en perspective entre la
+            vision de Jules Verne et les connaissances scientifiques actuelles.
+          </p>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
     <footer class="site-footer fixed-footer">

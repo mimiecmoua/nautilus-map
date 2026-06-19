@@ -28,7 +28,7 @@ Using JupyterLab, Python, and a local language model (Mistral 7B via Ollama), I 
 
 🇫🇷🇬🇧 **Full bilingual display** — French and English throughout
 
-📖 **Card 1 — Living Logbook**: authentic excerpts from Jules Verne's novel for each stop
+📖 **Card 1 — Book except**: authentic excerpts from Jules Verne's novel for each stop
 
 🐋 **Card 2 — Marine Species**: 329 species detected directly in the novel's text using NLP (regex + exhaustive INPN dictionary), classified by category (cetaceans, molluscs, echinoderms, algae...)
 
