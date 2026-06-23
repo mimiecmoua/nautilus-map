@@ -7,14 +7,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV7FBW15L8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-MV7FBW15L8');
-    </script>
+    <!-- Tarteaucitron.js — gestion du consentement cookies -->
+    <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.js"></script>
+    <!-- Tarteaucitron.js — gestion du consentement cookies -->
+<script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.17.0/tarteaucitron.js"></script>
+<script>
+  tarteaucitron.init({
+    "privacyUrl": "index_CGU4.html",
+    "bodyPosition": "bottom",
+    "hashtag": "#tarteaucitron",
+    "cookieName": "tarteaucitron",
+    "orientation": "bottom",
+    "groupServices": false,
+    "showAlertSmall": false,
+    "cookieslist": false,
+    "showIcon": false,
+    "iconPosition": "BottomRight",
+    "adblocker": false,
+    "DenyAllCta": true,
+    "AcceptAllCta": true,
+    "highPrivacy": true,
+    "handleBrowserDNTRequest": false,
+    "removeCredit": false,
+    "moreInfoLink": true,
+    "useExternalCss": false,
+    "useExternalJs": false,
+    "mandatory": false,
+    "mandatoryCta": true
+  });
+  tarteaucitron.user.googletagmanagerId = 'G-MV7FBW15L8';
+  (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
+</script>
     <title>Atlas du Nautilus</title>
     <link rel="icon" type="image/png" href="img/kraken.png">
 </head>
@@ -37,13 +60,14 @@
       </a>
     </div>
     <footer class="site-footer fixed-footer">
-        <p>&copy; WebOara 2026 • 🩵 
-          <a href="img/cguNautilus.pdf" target="_blank">CGU</a>  
+        <p>&copy; WebOara 2026 • 🩵  
+          <a href="index_CGU5.html">CGU</a>  
           <a href="https://weboara.com/" target="_blank">Contact</a> 
           <a href="https://www.societejulesverne.org/" target="_blank">Société Jules Verne</a> 
           <a href="index3.html">Mode d'emploi</a>
+          <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;"> Cookies</a>
         </p>
-      </footer>
+      </footer> 
     <script src="script.js" defer></script>
   </body>
 </html>

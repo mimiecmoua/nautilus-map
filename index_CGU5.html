@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CGU — Atlas du Nautilus</title>
+    <link rel="icon" type="image/png" href="img/kraken.png">
+    <style>
+        /* Scroll activé sur cette page uniquement */
+        html, body {
+            overflow: auto !important;
+            height: auto !important;
+        }
+        body {
+            padding-bottom: 80px;
+        }
+
+        /* Reset hud-layout pour cette page */
+        .hud-layout {
+            display: block !important;
+            height: auto !important;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 1.2rem 2rem;
+        }
+
+        .page-subtitle {
+            font-family: 'Michroma', sans-serif;
+            font-size: 0.78rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #27c39f;
+            text-align: center;
+            margin-bottom: 2rem;
+            opacity: 0.7;
+        }
+
+        /* Card CGU — même style que .instruction-card */
+        .cgu-card {
+            width: 100%;
+            padding: clamp(1.25rem, 2vw, 2rem);
+            border-radius: 28px;
+            border: 1px solid rgba(168, 255, 255, 0.22);
+            background: linear-gradient(180deg, rgba(5,20,31,0.72), rgba(3,12,20,0.48));
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 18px 40px rgba(0,0,0,0.35), inset 0 0 30px rgba(39,195,159,0.05);
+            position: relative;
+        }
+
+        .card-intro {
+            color: #d5edf5;
+            line-height: 1.7;
+            font-size: clamp(0.98rem, 1vw, 1.05rem);
+        }
+
+        .version-badge {
+            display: inline-block;
+            margin-top: 0.75rem;
+            padding: 0.2rem 0.8rem;
+            border: 1px solid rgba(168,255,255,0.22);
+            border-radius: 6px;
+            font-family: 'Michroma', sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            color: #a8ffff;
+            text-transform: uppercase;
+        }
+
+        /* Sections — même style que .instruction-block */
+        .cgu-section {
+            margin-top: 1.25rem;
+            padding: 1.25rem;
+            border-radius: 22px;
+            border: 1px solid rgba(168, 255, 255, 0.14);
+            background: rgba(10, 24, 34, 0.42);
+        }
+
+        .cgu-section h3 {
+            margin-bottom: 0.9rem;
+            color: #27c39f;
+            font-family: 'Michroma', sans-serif;
+            font-size: clamp(0.95rem, 1vw, 1.1rem);
+        }
+
+        .cgu-section p,
+        .cgu-section li {
+            color: #d5edf5;
+            line-height: 1.7;
+            font-size: clamp(0.98rem, 1vw, 1.05rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .cgu-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.4rem;
+        }
+
+        .cgu-section ul li {
+            position: relative;
+            padding-left: 1.4rem;
+            margin-bottom: 0;
+        }
+
+        .cgu-section ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #27c39f;
+            box-shadow: 0 0 10px #27c39f;
+        }
+
+        .hl {
+            color: #27c39f;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .cgu-section { padding: 1rem; border-radius: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Conditions Générales d'Utilisation</h1>
+    <p class="page-subtitle">The Nautilus Exploration — WebOara 2026</p>
+
+    <section class="hud-layout" aria-label="Conditions générales d'utilisation">
+        <div class="cgu-card">
+
+            <p class="card-intro">
+                Ce site est un projet personnel open source, créé par <span class="hl">Émilie Clain</span> et mis à disposition sous licence MIT.<br><br>
+                En accédant à ce site, vous acceptez les présentes conditions d'utilisation. Elles sont rédigées dans un souci de transparence totale : ce site ne collecte rien, ne vend rien, ne traque rien.
+            </p>
+            <div class="version-badge">Version 1.0 — Juin 2026</div>
+
+            <div class="cgu-section">
+                <h3>Article 1 — Nature du site</h3>
+                <p>The Nautilus Exploration est un site personnel à but non commercial, conçu pour reconstituer l'itinéraire du sous-marin Nautilus décrit dans <em>Vingt mille lieues sous les mers</em> de Jules Verne.</p>
+                <p>Il s'agit d'un projet culturel et éducatif, sans affiliation à un éditeur ou à toute entité commerciale.</p>
+            </div>
+
+            <div class="cgu-section">
+                <h3>Article 2 — Licence &amp; code source</h3>
+                <p>Ce site est publié sous <span class="hl">licence MIT</span>. Vous êtes libre de consulter, utiliser, modifier et partager le code source, sous réserve de mentionner l'autrice originale : <span class="hl">Émilie Clain</span>.</p>
+                <p>Toute réutilisation commerciale sans accord explicite de l'autrice est interdite.</p>
+            </div>
+
+            <div class="cgu-section">
+                <h3>Article 3 — Données personnelles &amp; cookies</h3>
+                <p>Ce site utilise <span class="hl">Google Analytics</span> uniquement pour mesurer le nombre de visites, de manière anonyme. Aucune donnée personnelle identifiable n'est collectée ou vendue.</p>
+                <p>Conformément au RGPD, Google Analytics ne se charge que si vous avez donné votre <span class="hl">consentement explicite</span> via la bannière affichée à votre première visite.</p>
+                <p>En dehors de Google Analytics, le site ne contient :</p>
+                <ul>
+                    <li>ni publicité</li>
+                    <li>ni traqueur tiers supplémentaire</li>
+                    <li>ni formulaire de collecte de données</li>
+                </ul>
+                <p style="margin-top:0.75rem;">Si vous refusez les cookies, votre navigation reste entièrement privée et aucune donnée n'est transmise.</p>
+            </div>
+
+            <div class="cgu-section">
+                <h3>Article 3bis — Gestion du consentement</h3>
+                <p>La gestion du consentement est assurée par <span class="hl">Tarteaucitron.js</span>, une solution open source française, conforme au RGPD et aux recommandations de la CNIL.</p>
+                <p>Votre choix est mémorisé via un cookie de préférence, sans transmission de données à des tiers.</p>
+            </div>
+
+            <div class="cgu-section">
+                <h3>Article 4 — Propriété intellectuelle</h3>
+                <p>Les textes extraits de <em>Vingt mille lieues sous les mers</em> de Jules Verne sont dans le domaine public. Les illustrations reproduites sont également libres de droits ou issues de sources identifiées comme telles.</p>
+                <p>Le code, la conception graphique, la mise en page et le contenu éditorial propres à ce site restent la propriété de leur autrice et sont soumis à la licence MIT mentionnée à l'article 2.</p>
+            </div>
+
+            <div class="cgu-section">
+                <h3>Article 5 — Responsabilité</h3>
+                <p>L'autrice s'efforce de fournir des informations exactes et à jour, mais ne saurait être tenue responsable d'éventuelles erreurs, omissions ou inexactitudes dans la reconstitution de l'itinéraire du Nautilus.</p>
+                <p>Ce site est fourni « tel quel », sans garantie d'aucune sorte, dans les limites autorisées par la loi applicable.</p>
+            </div>
+
+            <div class="cgu-section">
+                <h3>Article 6 — Liens externes</h3>
+                <p>Ce site peut contenir des liens vers des sites tiers (notamment la Société Jules Verne). Ces liens sont fournis à titre informatif. L'autrice n'est pas responsable du contenu des sites externes et ne les contrôle pas.</p>
+            </div>
+
+            <div class="cgu-section">
+                <h3>Article 7 — Modifications</h3>
+                <p>Les présentes conditions peuvent être mises à jour à tout moment. La date de version indiquée en en-tête de ce document fait foi. Il vous appartient de les consulter régulièrement.</p>
+            </div>
+
+            <div class="cgu-section">
+                <h3>Article 8 — Contact</h3>
+                <p>Pour toute question relative à ce site ou à l'utilisation du code source, vous pouvez contacter l'autrice via :</p>
+                <ul>
+                    <li>Le site WebOara : <span class="hl">weboara.com</span></li>
+                    <li>E-mail : <span class="hl">contact@weboara.com</span></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer fixed-footer">
+  <p class="copyright">
+    &copy; WebOara 2026 • 🩵
+  </p>
+  <nav class="footer-links">
+    <a href="index_CGU5.html">CGU</a>
+    <a href="https://weboara.com/" target="_blank">Contact</a>
+    <a href="https://www.societejulesverne.org/" target="_blank">Société Jules Verne</a>
+    <a href="index2.html">Carte</a>
+    <a href="index.html">Accueil</a>
+    <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;"> Cookies</a>
+
+  </nav>
+</footer>
+</body>
+</html>
