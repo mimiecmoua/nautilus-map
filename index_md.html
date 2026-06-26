@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV7FBW15L8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MV7FBW15L8');
+    </script>
+    <title>Exploration du Nautilus</title>
+    <link rel="icon" type="image/png" href="img/kraken.png">
+</head>
+<body>
+    <h1>Mode d'emploi</h1>
+
+<section class="hud-layout hud-layout--card" aria-labelledby="instructions-title">
+  <div class="instruction-card">
+    <div class="card-header">
+      <p class="card-intro">
+        Cette interface se lit comme un poste de navigation. En lisant Vingt mille lieues sous les mers, 
+        j'ai simplement eu envie de savoir à quoi ressemblerait le voyage du Nautilus dans le monde réel. 
+        J'ai donc entrepris de reconstituer son itinéraire, de localiser les lieux traversés et d'associer chaque 
+        étape aux événements racontés dans le roman. Ce projet est né de cette curiosité : suivre la route imaginée par 
+        Jules Verne et permettre à chacun de voyager aux côtés du capitaine Nemo.
+      </p>
+    </div>
+
+    <div class="instruction-block">
+      <h3>Utilisation</h3>
+      <ul class="instruction-points">
+        <li>Observer la carte et repérer les zones interactives.</li>
+        <li>Cliquer pour déclencher une action ou afficher une information.</li>
+        <li>Lire les retours affichés pour suivre l'exploration.</li>
+      </ul>
+    </div>
+
+    <div class="instruction-block">
+      <h3>Sur la carte</h3>
+      <ul class="instruction-points">
+        <li>Chaque marqueur bleu correspond à une escale du Nautilus.</li>
+        <li>Le marqueur vert ⚓ indique le point de départ du voyage, le marqueur rouge 🏁 indique l'arrivée.</li>
+        <li>La ligne turquoise retrace le trajet complet du sous-marin.</li>
+        <li>Les zones colorées en transparence représentent les 9 grandes régions océaniques traversées par le Nautilus.</li>
+        <li>Cliquer sur un marqueur ouvre une fenêtre avec les informations de l'escale : date, océan, événement, coordonnées.</li>
+      </ul>
+    </div>
+
+    <div class="instruction-block">
+      <h3>Le journal de bord vivant</h3>
+      <p class="card-intro">
+        Depuis chaque fenêtre d'escale, deux boutons donnent accès aux entrées
+        <strong>Extrait du livre</strong> et <strong>Espèces maritimes du roman</strong>,
+        tirées directement du texte de Jules Verne.
+      </p>
+
+      <div class="logbook-list">
+        <article class="logbook-step">
+          <span class="step-label">Entrée 1</span>
+          <p>
+            📖 <strong>Extrait du livre</strong> — le passage original de
+            <em>Vingt mille lieues sous les mers</em> de Jules Verne correspondant à cette escale.
+          </p>
+        </article>
+
+        <article class="logbook-step">
+          <span class="step-label">Entrée 2</span>
+          <p>
+            🐟 <strong>Espèces maritimes mentionnées</strong> — la faune et la flore maritimes
+            identifiées dans le passage du roman associé à l'escale, relevées chapitre par chapitre.
+            Si aucune espèce n'est citée, cela est précisé clairement.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <div class="instruction-block">
+      <h3>Explorations IA · deux boutons flottants</h3>
+      <p class="card-intro">
+        En bas à gauche de la carte, deux boutons flottants donnent accès aux contenus générés par intelligence artificielle.
+        Cliquer sur un bouton fait apparaître un panneau listant les 9 zones océaniques.
+        Cliquer ensuite sur une zone ouvre la fiche correspondante.
+      </p>
+
+      <div class="logbook-list">
+        <article class="logbook-step">
+          <span class="step-label">Exploration 1</span>
+          <p>
+            🔬 <strong>Découvertes du XIXe siècle · Exploration IA</strong> — les grandes découvertes
+            scientifiques maritimes réelles du XIXe siècle liées à chaque zone océanique :
+            naturalistes, expéditions, espèces décrites pour la première fois, cartographie et bathymétrie.
+          </p>
+        </article>
+
+        <article class="logbook-step">
+          <span class="step-label">Exploration 2</span>
+          <p>
+            ⚖️ <strong>XIXe vs Aujourd'hui · 1866 · Exploration IA</strong> — une comparaison entre
+            les connaissances maritimes de 1866 et l'état actuel de chaque zone océanique :
+            génie visionnaire de Jules Verne, technologies modernes, problèmes environnementaux
+            et lois de protection en vigueur.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+    <footer class="site-footer fixed-footer">
+  <p class="copyright">
+    &copy; WebOara 2026 • 🩵
+  </p>
+  <nav class="footer-links">
+    <a href="index_CGU5.html" target="_blank">CGU</a>
+    <a href="https://weboara.com/" target="_blank">Contact</a>
+    <a href="https://www.societejulesverne.org/" target="_blank">Société Jules Verne</a>
+    <a href="index2.html">Carte</a>
+    <a href="index.html">Accueil</a>
+    <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;"> Cookies</a>
+
+  </nav>
+</footer>
+    <script src="script.js"defer></script>
+  </body>
+</html>
