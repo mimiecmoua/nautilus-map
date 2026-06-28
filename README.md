@@ -173,4 +173,4 @@ _« La science, mon ami, est faite d'erreurs, mais d'erreurs qu'il est bon de co
 
 ---
 
-© 2026 WebOara — Émilie Clain | Licence MIT
+© 2026 WebOara — Émilie Clain | Licence CC BY-NC-ND 4.0
